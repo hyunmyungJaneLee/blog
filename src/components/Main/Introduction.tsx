@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import ProfileImage from 'components/Main/Profile';
 
@@ -37,7 +37,7 @@ const Introduction: FunctionComponent = function () {
 
         <div>
           <SubTitle>Nice to Meet You,</SubTitle>
-          <Title>I'm Frontend Developer.</Title>
+          <Title>I'm Frontend Developer 현명.</Title>
         </div>
       </Wrapper>
     </Background>
