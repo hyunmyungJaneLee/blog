@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import GlobalStyle from 'components/Common/GlobalStyle';
 import ProfileImage from 'components/Main/Profile';
 import styled from '@emotion/styled';
+import Introduction from 'components/Main/Introduction';
 
 const Container = styled.div`
   display: flex;
@@ -15,7 +16,7 @@ const IndexPage: FunctionComponent = function () {
   return (
     <Container>
       <GlobalStyle />
-      <ProfileImage />
+      <Introduction />
     </Container>
   );
 };
