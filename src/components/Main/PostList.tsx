@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import PostItem from './PostItem';
-import PostThumbnail from '../../images/PostThumbnail.jpeg';
+import PostThumbnail from '../../images/post-image.jpg';
 
 const PostListWrapper = styled.div`
   display: grid;
