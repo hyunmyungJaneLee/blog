@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import PostItem from './PostItem';
 import PostThumbnail from '../../images/post-image.jpg';
+import { PostListItemType } from 'types/PostItem.types';
 
 const PostListWrapper = styled.div`
   display: grid;
@@ -18,67 +19,16 @@ const PostListWrapper = styled.div`
   }
 `;
 
-const PostList: FunctionComponent = function () {
+type PostListProps = {
+  posts: PostListItemType[];
+};
+const PostList: FunctionComponent<PostListProps> = function ({ posts }) {
   return (
     <PostListWrapper>
-      <PostItem
-        title="Post Item Title... Post Item Title...Post Item Title...Post Item Title...Post Item Title...Post Item Title..."
-        date="2020.01.29."
-        categories={[
-          'Web',
-          'Frontend',
-          'Testing',
-          'Web',
-          'Frontend',
-          'Testing',
-          'Web',
-          'Frontend',
-          'Testing',
-        ]}
-        summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat doloremque fugit quis rem temporibus! Maxime molestias, suntrem debitis odit harum impedit. Modi cupiditate harum dignissimos eos in corrupti!"
-        thumbnail={PostThumbnail}
-        link="link"
-      />
-      <PostItem
-        title="title"
-        date="data"
-        categories={['web', 'sdfsdf', 'sdfsfd']}
-        summary="summary"
-        thumbnail={PostThumbnail}
-        link="link"
-      />
-      <PostItem
-        title="title"
-        date="data"
-        categories={['web', 'sdfsdf', 'sdfsfd']}
-        summary="summary"
-        thumbnail={PostThumbnail}
-        link="link"
-      />
-      <PostItem
-        title="title"
-        date="data"
-        categories={['web', 'sdfsdf', 'sdfsfd']}
-        summary="summary"
-        thumbnail={PostThumbnail}
-        link="link"
-      />
-      <PostItem
-        title="title"
-        date="data"
-        categories={['web', 'sdfsdf', 'sdfsfd']}
-        summary="summary"
-        thumbnail={PostThumbnail}
-        link="link"
-      />
-      <PostItem
-        title="title"
-        date="data"
-        categories={['web', 'sdfsdf', 'sdfsfd']}
-        summary="summary"
-        thumbnail={PostThumbnail}
-        link="link"
-      />
+      {' '}
+      {posts.map(({ node: { id, frontmatter } }: PostListItemType) => (
+        <PostItem {...frontmatter} link="https://www.google.co.kr/" key={id} />
+      ))}
     </PostListWrapper>
   );
 };
