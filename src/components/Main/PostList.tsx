@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import PostItem from './PostItem';
+import PostThumbnail from '../../images/PostThumbnail.jpeg';
 
 const PostListWrapper = styled.div`
   display: grid;
@@ -35,7 +36,7 @@ const PostList: FunctionComponent = function () {
           'Testing',
         ]}
         summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat doloremque fugit quis rem temporibus! Maxime molestias, suntrem debitis odit harum impedit. Modi cupiditate harum dignissimos eos in corrupti!"
-        thumbnail="NOIMAGE"
+        thumbnail={PostThumbnail}
         link="link"
       />
       <PostItem
@@ -43,7 +44,7 @@ const PostList: FunctionComponent = function () {
         date="data"
         categories={['web', 'sdfsdf', 'sdfsfd']}
         summary="summary"
-        thumbnail="NOIMAGE"
+        thumbnail={PostThumbnail}
         link="link"
       />
       <PostItem
@@ -51,7 +52,7 @@ const PostList: FunctionComponent = function () {
         date="data"
         categories={['web', 'sdfsdf', 'sdfsfd']}
         summary="summary"
-        thumbnail="NOIMAGE"
+        thumbnail={PostThumbnail}
         link="link"
       />
       <PostItem
@@ -59,7 +60,7 @@ const PostList: FunctionComponent = function () {
         date="data"
         categories={['web', 'sdfsdf', 'sdfsfd']}
         summary="summary"
-        thumbnail="NOIMAGE"
+        thumbnail={PostThumbnail}
         link="link"
       />
       <PostItem
@@ -67,7 +68,7 @@ const PostList: FunctionComponent = function () {
         date="data"
         categories={['web', 'sdfsdf', 'sdfsfd']}
         summary="summary"
-        thumbnail="NOIMAGE"
+        thumbnail={PostThumbnail}
         link="link"
       />
       <PostItem
@@ -75,7 +76,7 @@ const PostList: FunctionComponent = function () {
         date="data"
         categories={['web', 'sdfsdf', 'sdfsfd']}
         summary="summary"
-        thumbnail="NOIMAGE"
+        thumbnail={PostThumbnail}
         link="link"
       />
     </PostListWrapper>
