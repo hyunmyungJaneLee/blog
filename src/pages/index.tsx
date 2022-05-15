@@ -1,10 +1,10 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useMemo } from 'react';
 import queryString, { ParsedQuery } from 'query-string';
 import GlobalStyle from 'components/Common/GlobalStyle';
 import styled from '@emotion/styled';
 import Introduction from 'components/Main/Introduction';
 import Footer from 'components/Common/Footer';
-import CategoryList from 'components/Main/CategoryList';
+import CategoryList, { CategoryListProps } from 'components/Main/CategoryList';
 import PostList from 'components/Main/PostList';
 import { graphql } from 'gatsby';
 import { PostListItemType } from 'types/PostItem.types';
@@ -15,12 +15,6 @@ const Container = styled.div`
   flex-direction: column;
   height: 100%;
 `;
-
-const CATEGORY_LIST = {
-  All: 5,
-  Web: 3,
-  Mobile: 2,
-};
 
 type IndexPageProps = {
   location: {
@@ -47,23 +41,45 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
     },
   },
 }) {
-  console.log(search);
   const parsed: ParsedQuery<string> = queryString.parse(search);
-  console.log(parsed);
   const selectedCategory: string =
     typeof parsed.category !== 'string' || !parsed.category
       ? 'All'
       : parsed.category;
 
+  const categoryList = useMemo(
+    () =>
+      edges.reduce(
+        (
+          list: CategoryListProps['categoryList'],
+          {
+            node: {
+              frontmatter: { categories },
+            },
+          }: PostListItemType,
+        ) => {
+          categories.forEach((category) => {
+            if (list[category] === undefined) list[category] = 1;
+            else list[category]++;
+          });
+
+          list['All']++;
+
+          return list;
+        },
+        { All: 0 },
+      ),
+    [],
+  );
   return (
     <Container>
       <GlobalStyle />
       <Introduction profileImage={gatsbyImageData} />
       <CategoryList
         selectedCategory={selectedCategory}
-        categoryList={CATEGORY_LIST}
+        categoryList={categoryList}
       />
-      <PostList posts={edges} />
+      <PostList selectedCategory={selectedCategory} posts={edges} />
       <Footer />
     </Container>
   );

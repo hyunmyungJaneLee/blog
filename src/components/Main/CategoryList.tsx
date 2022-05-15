@@ -63,7 +63,7 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
           active={name === selectedCategory}
           key={name}
         >
-          #{name}({count})
+          {name}({count})
         </CategoryItem>
       ))}
     </CategoryListWrapper>
