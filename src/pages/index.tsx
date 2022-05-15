@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'react';
+import queryString, { ParsedQuery } from 'query-string';
 import GlobalStyle from 'components/Common/GlobalStyle';
 import styled from '@emotion/styled';
 import Introduction from 'components/Main/Introduction';
@@ -7,6 +8,7 @@ import CategoryList from 'components/Main/CategoryList';
 import PostList from 'components/Main/PostList';
 import { graphql } from 'gatsby';
 import { PostListItemType } from 'types/PostItem.types';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 const Container = styled.div`
   display: flex;
@@ -21,23 +23,46 @@ const CATEGORY_LIST = {
 };
 
 type IndexPageProps = {
+  location: {
+    search: string;
+  };
   data: {
     allMarkdownRemark: {
       edges: PostListItemType[];
+    };
+    file: {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData;
+      };
     };
   };
 };
 
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
+  location: { search },
   data: {
     allMarkdownRemark: { edges },
+    file: {
+      childImageSharp: { gatsbyImageData },
+    },
   },
 }) {
+  console.log(search);
+  const parsed: ParsedQuery<string> = queryString.parse(search);
+  console.log(parsed);
+  const selectedCategory: string =
+    typeof parsed.category !== 'string' || !parsed.category
+      ? 'All'
+      : parsed.category;
+
   return (
     <Container>
       <GlobalStyle />
-      <Introduction />
-      <CategoryList selectedCategory="Web" categoryList={CATEGORY_LIST} />
+      <Introduction profileImage={gatsbyImageData} />
+      <CategoryList
+        selectedCategory={selectedCategory}
+        categoryList={CATEGORY_LIST}
+      />
       <PostList posts={edges} />
       <Footer />
     </Container>
@@ -66,6 +91,11 @@ export const getPostList = graphql`
             }
           }
         }
+      }
+    }
+    file(name: { eq: "profile" }) {
+      childImageSharp {
+        gatsbyImageData(width: 120, height: 120)
       }
     }
   }
