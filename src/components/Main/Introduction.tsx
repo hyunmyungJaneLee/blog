@@ -17,6 +17,9 @@ const Wrapper = styled.div`
   width: 768px;
   height: 400px;
   margin: 0 auto;
+  line-height: 80px;
+  font-size: 35px;
+  font-weight: 600;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -38,6 +41,21 @@ const Title = styled.div`
   margin-top: 5px;
   font-size: 35px;
   font-weight: 700;
+  span {
+    font-size: 20px;
+    vertical-align: top;
+    position: relative;
+    &.bracket {
+      font-size: 20px;
+      color: #34c1ed;
+    }
+    &.tagname {
+      font-size: 25px;
+      margin: 0 1px;
+      letter-spacing: -2px;
+      color: #326faf;
+    }
+  }
 
   @media (max-width: 768px) {
     font-size: 25px;
@@ -56,10 +74,15 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
       <Wrapper>
         <ProfileImage profileImage={profileImage} />
 
-        <div>
-          <SubTitle>Nice to Meet You,</SubTitle>
-          <Title>I'm Frontend Developer 현명.</Title>
-        </div>
+        <Title>
+          <span className="bracket">&lt;</span>
+          <span className="tagname">h1</span>
+          <span className="bracket">&gt;</span>
+          Today I Learned; 기억 아카이브
+          <span className="bracket">&lt;/</span>
+          <span className="tagname">h1</span>
+          <span className="bracket">&gt;</span>
+        </Title>
       </Wrapper>
     </Background>
   );
