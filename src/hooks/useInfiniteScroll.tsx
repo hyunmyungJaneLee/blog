@@ -42,6 +42,8 @@ const useInfiniteScroll = function (
     },
   );
 
+  useEffect(() => setCount(1), [selectedCategory]);
+
   useEffect(() => {
     if (
       NUMBER_OF_ITEMS_PER_PAGE * count >= postListByCategory.length ||
