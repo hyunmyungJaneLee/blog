@@ -3,7 +3,7 @@ date: '2022-05-11'
 title: 'React'
 categories: ['React']
 summary: 'Create React App'
-thumbnail: './test.jpg'
+thumbnail: '../test.jpg'
 ---
 
 ### 1. Start with CRA

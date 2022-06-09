@@ -30,9 +30,17 @@ const PostList: FunctionComponent<PostListProps> = function ({
   const { containerRef, postList } = useInfiniteScroll(selectedCategory, posts);
   return (
     <PostListWrapper id="postListWrapper" ref={containerRef}>
-      {postList.map(({ node: { id, frontmatter } }: PostListItemType) => (
-        <PostItem {...frontmatter} link="/" key={id} />
-      ))}
+      {postList.map(
+        ({
+          node: {
+            id,
+            frontmatter,
+            fields: { slug },
+          },
+        }: PostListItemType) => (
+          <PostItem {...frontmatter} link={slug} key={id} />
+        ),
+      )}
     </PostListWrapper>
   );
 };
