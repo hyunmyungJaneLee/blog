@@ -15,20 +15,17 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
       },
     },
   });
+};
 
-  // Generate a Slug Each Post Data
-  exports.onCreateNode = ({ node, getNode, actions }) => {
-    const { createNodeField } = actions;
+// Generate a Slug Each Post Data
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
 
-    console.log(node);
-    console.log(actions);
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode });
 
-    if (node.internal.type === `MarkdownRemark`) {
-      const slug = createFilePath({ node, getNode });
-
-      createNodeField({ name: 'slug', node, value: slug });
-    }
-  };
+    createNodeField({ node, name: 'slug', value: slug });
+  }
 };
 
 // Generate Post Page Through Markdown Data
@@ -62,6 +59,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running query`);
     return;
   }
+
   // Import Post Template Component
   const PostTemplateComponent = path.resolve(
     __dirname,
