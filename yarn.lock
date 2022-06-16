@@ -6380,6 +6380,13 @@ gatsby-parcel-config@^0.7.0:
     "@parcel/transformer-raw" "2.6.0"
     "@parcel/transformer-react-refresh-wrap" "2.6.0"
 
+gatsby-plugin-canonical-urls@^4.16.0:
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-4.16.0.tgz#daa6dadc13ed12396ccf634816d4b756b7b31de3"
+  integrity sha512-JrKnW+Jb/OcPJAGjaj7sTtSttcvRhvBvB5VGUCRGnmfIECxtD8igJwGGwTKh3CdR/XisNilcJXNciEF+tavtCA==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+
 gatsby-plugin-emotion@^7.13.0:
   version "7.13.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-7.13.0.tgz#d20a9d05ab7f5b8cccb89d149df40e5c5814c8a0"

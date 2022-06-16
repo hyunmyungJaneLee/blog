@@ -76,6 +76,13 @@ module.exports = {
               rel: 'nofollow',
             },
           },
+          {
+            resolve: 'gatsby-plugin-canonical-urls',
+            options: {
+              siteUrl: 'https://jane.github.io',
+              stripQueryString: true,
+            },
+          },
         ],
       },
     },
