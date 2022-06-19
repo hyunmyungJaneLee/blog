@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `햄맹씨의 블로그`,
-    description: `프론트엔드 개발을 좋아하는 햄맹씨의 블로그입니다. 기억력이 나빠 기록하려 합니다.`,
-    author: `hyunmyungJaneLee`,
-    siteUrl: `https://jane.github.io/`,
+    title: '햄맹씨의 블로그',
+    description:
+      '프론트엔드 개발을 좋아하는 햄맹씨의 블로그입니다. 기억력이 나빠 기록하려 합니다.',
+    author: 'hyunmyungJaneLee',
+    siteUrl: 'https://jane.github.io/',
   },
   plugins: [
     {
