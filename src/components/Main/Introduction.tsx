@@ -28,15 +28,6 @@ const Wrapper = styled.div`
   }
 `;
 
-const SubTitle = styled.div`
-  font-size: 20px;
-  font-weight: 400;
-
-  @media (max-width: 768px) {
-    font-size: 15px;
-  }
-`;
-
 const Title = styled.div`
   margin-top: 5px;
   font-size: 35px;
@@ -58,7 +49,13 @@ const Title = styled.div`
   }
 
   @media (max-width: 768px) {
-    font-size: 25px;
+    font-size: 20px;
+    span {
+      &.tagname {
+        font-size: 21px;
+        display: none;
+      }
+    }
   }
 `;
 
