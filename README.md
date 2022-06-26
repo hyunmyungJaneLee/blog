@@ -1,19 +1,15 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
+
 <h1 align="center">
-  프론트엔드 개발자 햄맹씨의 블로그💛
+  hyunmyungjanelee의 블로그💛
 </h1>
 
 ## 🚀 실행하기
 
-    ```shell
+    
     cd hyunmyung-gatsby-blog/
     yarn develop
-    ```
+    
+    
 
 ## 🧐 What's inside?
 
