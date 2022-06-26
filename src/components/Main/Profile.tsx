@@ -6,7 +6,7 @@ import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 const ProfileImageWrapper = styled(GatsbyImage)`
   width: 120px;
   height: 120px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   border-radius: 50%;
   isolation: isolate;
 
