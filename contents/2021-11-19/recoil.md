@@ -6,8 +6,6 @@ summary: 'React를 위한 상태관리 라이브러리 - Recoil'
 thumbnail: '../test.jpg'
 ---
 
----
-
 ## 1. recoil이란?
 
 ## 2. atoms와 selectors
