@@ -70,3 +70,4 @@ yarn-error.log
 
 # VS Code confing
 .vscode/
+node_modules
