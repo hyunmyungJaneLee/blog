@@ -1,9 +1,9 @@
 ---
 date: '2021-11-19'
 title: 'recoil'
-categories: ['frontend','react']
+categories: ['frontend','React']
 summary: 'React를 위한 상태관리 라이브러리 - Recoil'
-thumbnail: '../test.jpg'
+thumbnail: '../react-logo.png'
 ---
 
 # Recoil?
