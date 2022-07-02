@@ -7,7 +7,7 @@
 ## 🚀 실행하기
 
     
-    cd hyunmyung-gatsby-blog/
+    cd hyunmyung-gatsby-blog
     yarn develop
     
     
