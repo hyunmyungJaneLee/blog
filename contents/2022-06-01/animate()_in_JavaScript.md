@@ -13,7 +13,7 @@ javascript로 css 애니메이션을 구현하는 함수
 # Syntax
 
 ```jsx
-**animate(**keyframes(array) | keyframes(object), duration | optional**)**
+animate(keyframes(array) | keyframes(object), duration | optional)
 ```
 
 ## Array keyframe Example
@@ -21,10 +21,10 @@ javascript로 css 애니메이션을 구현하는 함수
 배열 키프레임을 인자로 받는다. 시작 효과와 끝 효과를 지정할 수 있다.
 
 ```jsx
-<button id="idDiv" onclick="**changeTextcolor**()">Animate</button>
+<button id="idDiv" onclick="changeTextcolor()">Animate</button>
 
 <script>
- function **changeTextcolor**()
+ function changeTextcolor()
  {
   const elem = document.getElementById("idDiv");
   elem.animate(
