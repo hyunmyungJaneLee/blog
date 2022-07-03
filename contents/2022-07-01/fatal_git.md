@@ -5,6 +5,7 @@ categories: ['Frontend', 'git']
 summary: 'fatal: 관계 없는 커밋 내역의 병합을 거부합니다.'
 thumbnail: '../git-icon.png'
 ---
+
 # fatal: 관계 없는 커밋 내역의 병합을 거부합니다.
 
 fatal: 관계 없는 커밋 내역의 병합을 거부합니다.

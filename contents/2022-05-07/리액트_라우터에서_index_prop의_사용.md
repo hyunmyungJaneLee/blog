@@ -5,6 +5,7 @@ categories: ['Frontend', 'React']
 summary: 'index routes in React Router v6'
 thumbnail: '../react-logo.png'
 ---
+
 # 리액트 라우터에서 index prop의 사용
 
 # **index route란**

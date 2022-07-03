@@ -5,6 +5,7 @@ categories: ['Frontend', 'React', 'VSCode']
 summary: '리액트 프로젝트 eslint, prettier 설정하기'
 thumbnail: '../react-logo.png'
 ---
+
 # eslint, prettier 설정
 
 ```jsx
