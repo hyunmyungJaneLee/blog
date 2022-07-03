@@ -1,3 +1,11 @@
+---
+date: '2022-01-04'
+title: '자바스크립트에서 clean code 작성하기'
+categories: ['Frontend', 'JavaScript']
+summary: 'Clean Code in JS'
+thumbnail: '../javascript-logo.png'
+---
+
 # Clean Code in JS
 
 💡 당장은 못느끼지만, 앱이 커지면 느낄 수 있다

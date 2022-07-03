@@ -1,3 +1,10 @@
+---
+date: '2022-06-15'
+title: 'webpack과 babel..'
+categories: ['Frontend', 'JavaScript', 'webpack', 'babel']
+summary: 'webpack, babel에 대한 간단한 정리,,'
+thumbnail: '../javascript-logo.png'
+---
 # webpack과 babel
 
 # 🔍webpack

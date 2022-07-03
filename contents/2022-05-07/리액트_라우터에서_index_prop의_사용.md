@@ -1,3 +1,10 @@
+---
+date: '2022-05-07'
+title: 'React router에서의 index Router'
+categories: ['Frontend', 'React']
+summary: 'index routes in React Router v6'
+thumbnail: '../react-logo.png'
+---
 # 리액트 라우터에서 index prop의 사용
 
 # **index route란**
@@ -9,7 +16,7 @@
 <Routes>
   <Route path="invoices" element={<Invoices />} >
     <Route
-      **index**
+      index
       element={
         <p>Select an invoice</p>
       }
