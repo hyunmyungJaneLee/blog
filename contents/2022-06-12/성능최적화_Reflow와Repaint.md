@@ -38,8 +38,8 @@ HTML 요소의 크기나 위치가 변하면 영향 받는 모든 노드들의 �
 ## Reflow를 발생시키는 속성
 
 ```jsx
-**width, height, left, top, border, display, font-size, vertical-align, text-align, 
-padding, margin, float, position** 등 레이아웃에 영향을 주는 모든 속성
+width, height, left, top, border, display, font-size, vertical-align, text-align, 
+padding, margin, float, position 등 레이아웃에 영향을 주는 모든 속성
 ```
 
 # 🎨 Repaint
@@ -56,7 +56,7 @@ color, visibility, border-radius, background, background-size, background-image,
 
 # ✨Reflow 최적화하기
 
-**display:none의 사용**
+**display:none 사용하기**
 
 ```jsx
 visibility:none은 노드 공간을 차지하지만 
@@ -85,7 +85,7 @@ transfrom, opacity, cursor, orphans, perspective
 }
 ```
 
-**애니메이션 사용 시에는 position:fixed, absolute를 사용**
+**애니메이션 사용 시에는 position:fixed, absolute를 사용하기**
 
 ```jsx
 애니메이션, 트랜지션은 reflow 연산을 발생시킨다.
@@ -98,7 +98,7 @@ transfrom, opacity, cursor, orphans, perspective
 
 물론 유지보수 및 가독성 측면에서도 인라인 스타일을 지양하는 것이 좋기도 하다.
 
-**<table> 사용 지양하기**
+**table 태그 사용 지양하기**
 
 테이블은 점진적으로 렌더링 되지 않고 내부 콘텐츠가 모두 로딩된 후에 그려진다.
 
@@ -106,7 +106,7 @@ transfrom, opacity, cursor, orphans, perspective
 
 만약 쓰게 된다면, table-layout: fixed를 통해 테이블의 크기를 고정하는 것도 좋은 방법이다.
 
-**JS를 통해 스타일변화를 주어야 할 경우, 가급적 한번에 처리한다**
+**JS를 통해 스타일 변화를 주어야 할 경우, 가급적 한번에 처리하기**
 
 ```
 // style 객체를 여러번 호출해 적용한 코드: bad 👎🏻
@@ -127,7 +127,7 @@ for (var i = 0; i < div.length; i++) {
 }
 ```
 
-**will-change 속성의 사용**
+**will-change 속성 사용하기**
 
 [CSS 애니메이션 성능 개선 방법(reflow 최소화, will-change 사용) | WIT블로그](https://wit.nts-corp.com/2017/06/05/4571)
 
@@ -140,17 +140,21 @@ will-change: top, left;
 ```
 
 - auto
-    - 기본값으로 브라우저는 별다른 최적화를 실시하지 않습니다.
+    - 기본값으로 브라우저는 별다른 최적화를 실시하지 않음.
 - scroll-position
-    - 스크롤 할 때 엘리먼트의 위치가 변경될 것을 알려줍니다. 이 값을 설정하면 브라우저는 스크롤 가능한 엘리먼트를 미리 최적화 하여 랜더링 합니다. 한 번에 많은 양을 스크롤하거나 빠른 스크롤이 필요한 경우에 사용합니다.
+    - 스크롤 할 때 엘리먼트의 위치가 변경될 것을 알려준다. 이 값을 설정하면 브라우저는 스크롤 가능한 엘리먼트를 미리 최적화 하여 랜더링 한다. 한 번에 많은 양을 스크롤하거나 빠른 스크롤이 필요한 경우에 사용.
 - contents
-    - 엘리먼트의 컨텐츠가 변경될 것을 알려줍니다. 브라우저는 보통 엘리먼트의 랜더링 결과를 캐싱합니다. 대부분의 엘리먼트가 변경되지 않고 변경되어도 위치가 바뀌는 정도의 미미한 변경만 발생하기 때문입니다. 하지만 엘리먼트가 계속해서 변경되는 경우 브라우저 캐시는 무의미하게 됩니다. 이 속성을 사용하게 되면 캐시를 하지 않고 변경될 때마다 처음부터 랜더링하게 됩니다.
-- <custom-ident>
-    - 변경하고 싶은 속성을 사용할 수 있습니다. 쉼표(,)를 이용하여 두 개 이상의 속성을 사용할 수 있습니다. 크롬에서는 현재 6가지 속성(opacity, transform, top, left, right, bottom)만 적용됩니다. [참고](https://github.com/operasoftware/devopera/pull/330).
+    - 엘리먼트의 컨텐츠가 변경될 것을 알려준다. 브라우저는 보통 엘리먼트의 랜더링 결과를 캐싱한다. 대부분의 엘리먼트가 변경되지 않고 변경되어도 위치가 바뀌는 정도의 미미한 변경만 발생하기 때문이다. 하지만 엘리먼트가 계속해서 변경되는 경우 브라우저 캐시는 무의미하게 된다. 이 속성을 사용하게 되면 캐시를 하지 않고 변경될 때마다 처음부터 랜더링하게 된다.
+- custom-ident
+    - 변경하고 싶은 속성을 사용할 수 있다. 쉼표(,)를 이용하여 두 개 이상의 속성을 사용할 수 있다. 크롬에서는 현재 6가지 속성(opacity, transform, top, left, right, bottom)만 적용된다. 
+
+---
 
 ### 참고
 
 -도서: 자바스크립트 성능 최적화
+
+-블로그
 
 [[Javascript] - 리페인트 & 리플로우](https://velog.io/@soulee__/Javascript-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8-%EB%A6%AC%ED%94%8C%EB%A1%9C%EC%9A%B0)
 

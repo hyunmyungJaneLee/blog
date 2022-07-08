@@ -109,7 +109,8 @@ babel의 loader 설정에서 **target**은 지원하길 원하는 환경을 적
 
 Plugin은 압축을 한다거나, 핫리로딩을 한다거나, 파일을 복사하는 등의 부수적인 작업을 위한 부가기능이다. 보다 효율적인 번들링을 위해서 사용할 수 있지만 요즘에는 많은 부분을 **webpack.config.js**의 **optimization** 설정으로 대체 가능하기 때문에 사용빈도가 줄어드는 추세다.
 
-
+---
+### 참고한 곳
 
 [Webpack과 Babel을 이용한 React 개발 환경 구성하기](https://berkbach.com/%EC%9B%B9%ED%8C%A9-webpack-%EA%B3%BC-%EB%B0%94%EB%B2%A8-babel-%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-react-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0-fb87d0027766)
 
