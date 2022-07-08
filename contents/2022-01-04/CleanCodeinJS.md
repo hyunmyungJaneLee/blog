@@ -6,7 +6,7 @@ summary: 'Clean Code in JS'
 thumbnail: '../javascript-logo.png'
 ---
 
-# Clean Code in JS
+# Clean Code in JS(작성 중)
 
 💡 당장은 못느끼지만, 앱이 커지면 느낄 수 있다
 <br/>
@@ -66,9 +66,6 @@ const sample = function (){
 }
 ```
 
-## 임시변수를 제거한다
-
-// TODO: udemy 강의 듣고 다시 정리
 
 # 2. 경계다루기
 
@@ -221,7 +218,7 @@ const getName(isLogin, user){
 }
 ```
 
-**논리연산자(&&, ||)**를 사용하여 명확하고 축약된 코드 작성에 익숙해지자
+논리연산자(&&, ||)를 사용하여 명확하고 축약된 코드 작성에 익숙해지자
 
 ```jsx
 const getName(isLogin, user){

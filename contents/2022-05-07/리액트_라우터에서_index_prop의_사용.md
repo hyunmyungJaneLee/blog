@@ -37,6 +37,7 @@ thumbnail: '../react-logo.png'
 2. Index routes match when a parent route matches but none of the other children match. 인덱스 경로는 상위 경로가 다른 하위 경로와 다를 때 매치된다.
 3. Index routes are the default child route for a parent route. 인덱스 경로는 상위 경로의 default 경로이다.
 4. Index routes render when the user hasn't clicked one of the items in a navigation list yet. 인덱스 경로는 사용자가 탐색 목록의 항목 중 하나를 아직 클릭하지 않은 경우 렌더링됩니다.
+---
 
 **[공식사이트]**
 

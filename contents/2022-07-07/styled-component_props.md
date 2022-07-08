@@ -1,8 +1,8 @@
 ---
 date: '2022-07-07'
-title: 'styled-components에서 props 사용하기'
+title: 'styled-components에서 props 이용하기'
 categories: ['Frontend']
-summary: 'styled-components에서 props 이용하기'
+summary: 'styled-components에서 props 사용'
 thumbnail: '../test.jpg'
 ---
 
