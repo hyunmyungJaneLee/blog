@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 768px;
-  height: 400px;
+  height: 210px;
   margin: 0 auto;
   line-height: 80px;
   font-size: 35px;
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 230px;
+    height: 130px;
     padding: 0 20px;
   }
 `;
@@ -37,12 +37,15 @@ const Title = styled.div`
     vertical-align: top;
     position: relative;
     &.bracket {
-      font-size: 20px;
+      font-size: 29px;
+      color: #34c1ed;
+    }
+    &.slash {
+      font-size: 25px;
       color: #34c1ed;
     }
     &.tagname {
-      font-size: 25px;
-      margin: 0 1px;
+      font-size: 27px;
       letter-spacing: -2px;
       color: #326faf;
     }
@@ -69,14 +72,14 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
   return (
     <Background>
       <Wrapper>
-        <ProfileImage profileImage={profileImage} />
-
+        {/* <ProfileImage profileImage={profileImage} /> */}
         <Title>
           <span className="bracket">&lt;</span>
           <span className="tagname">h1</span>
           <span className="bracket">&gt;</span>
           Today I Learned; 기억 아카이브
-          <span className="bracket">&lt;/</span>
+          <span className="bracket">&lt;</span>
+          <span className="slash">/</span>
           <span className="tagname">h1</span>
           <span className="bracket">&gt;</span>
         </Title>
