@@ -13,6 +13,7 @@ type TemplateProps = {
 };
 
 const Container = styled.main`
+  background: #dde7ec3b;
   display: flex;
   flex-direction: column;
   height: 100%;

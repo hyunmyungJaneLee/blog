@@ -5,7 +5,7 @@ import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 const Background = styled.div`
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #f8c555 0%, #f59a6d 100%);
   color: #ffffff;
 `;
 
@@ -29,25 +29,25 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-  margin-top: 5px;
   font-size: 35px;
   font-weight: 700;
+  color: #5e4307;
   span {
     font-size: 20px;
     vertical-align: top;
     position: relative;
     &.bracket {
-      font-size: 29px;
-      color: #34c1ed;
+      font-size: 30px;
+      color: #c9ffc9;
     }
     &.slash {
       font-size: 25px;
-      color: #34c1ed;
+      color: #c9ffc9;
     }
     &.tagname {
-      font-size: 27px;
+      font-size: 30px;
       letter-spacing: -2px;
-      color: #326faf;
+      color: #c9ffc9;
     }
   }
 
@@ -75,12 +75,12 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
         {/* <ProfileImage profileImage={profileImage} /> */}
         <Title>
           <span className="bracket">&lt;</span>
-          <span className="tagname">h1</span>
+          {/* <span className="tagname">h1</span> */}
           <span className="bracket">&gt;</span>
-          Today I Learned; 기억 아카이브
+          기억 아카이브
           <span className="bracket">&lt;</span>
           <span className="slash">/</span>
-          <span className="tagname">h1</span>
+          {/* <span className="tagname">h1</span> */}
           <span className="bracket">&gt;</span>
         </Title>
       </Wrapper>
