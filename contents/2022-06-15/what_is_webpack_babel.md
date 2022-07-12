@@ -1,8 +1,8 @@
 ---
 date: '2022-06-15'
-title: 'webpack과 babel..'
-categories: ['Frontend', 'JavaScript', 'webpack', 'babel']
-summary: 'webpack, babel에 대한 간단한 정리,,'
+title: 'webpack과 babel에 대한 간단한 정리'
+categories: ['Frontend', 'JavaScript']
+summary: '모듈(Module) 이란 유지보수 및 가독성의 향상을 위해 프로그램의 기능별로 각각의 파일들을 구성하는 것이다. 그러나 이렇듯 세분화된 모듈 파일이 늘어날 수록 네트워크의 코스트는 늘어날 수 밖에 없다.'
 thumbnail: '../javascript-logo.png'
 ---
 

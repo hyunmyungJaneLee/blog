@@ -1,14 +1,18 @@
 ---
 date: '2022-07-07'
 title: 'styled-components에서 props 이용하기'
-categories: ['Frontend']
-summary: 'styled-components에서 props 사용'
+categories: ['Frontend', 'CSS']
+summary: '회사에서 처음 css in js로 스타일 컴포넌트를 사용해봤는데, 사용법이 익숙하면서도 어렵더라. 하나의 스타일 컴포넌트에서 props를 이용한 분기처리가 필요했다.'
 thumbnail: '../test.jpg'
 ---
 
 
 
 # styled-component에서 props 이용하기
+
+회사에서 처음 css in js로 스타일 컴포넌트를 사용해봤는데, 사용법이 익숙하면서도 어렵더라.
+하나의 스타일 컴포넌트에서 props를 이용한 분기처리가 필요했다.
+그 사용법을 간단하게 알아본다.
 
 ```jsx
 

@@ -1,8 +1,10 @@
 ---
 date: '2021-11-19'
-title: 'recoil에 대한 간단한 설명'
+title: 'React를 위한 상태관리 라이브러리 - Recoil에 대한 간단한 정리'
 categories: ['Frontend','React']
-summary: 'React를 위한 상태관리 라이브러리 - Recoil'
+summary: 'Atom은 컴포넌트들이 구독(subscribe)할 수 있는 단위이고, 
+Selector는 동기적 혹은 비동기적으로 상태를 변환한다.
+이 두 가지의 핵심 개념으로 이루어진 라이브러리다.'
 thumbnail: '../react-logo.png'
 ---
 
