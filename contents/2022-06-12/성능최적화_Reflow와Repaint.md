@@ -2,7 +2,9 @@
 date: '2022-06-15'
 title: '성능최적화, Reflow와 Repaint'
 categories: ['Frontend','JavaScript', 'HTML']
-summary: '자바스크립트 성능 최적화'
+summary: 'Reflow
+HTML 요소의 크기나 위치가 변하면 영향 받는 모든 노드들의 크기와 위치를 다시 계산하게 되는데
+이런 요소의 변화에 따라 레이아웃 트리를 다시 생성하는 작업을 reflow라고 한다.'
 thumbnail: '../HTML5_oval_logo.png'
 ---
 

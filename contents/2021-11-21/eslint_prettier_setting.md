@@ -1,8 +1,8 @@
 ---
 date: '2021-11-21'
 title: 'eslint, prettier 설정'
-categories: ['Frontend', 'React', 'VSCode']
-summary: '리액트 프로젝트 eslint, prettier 설정하기'
+categories: ['Frontend']
+summary: 'yarn add eslint prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest --dev'
 thumbnail: '../react-logo.png'
 ---
 

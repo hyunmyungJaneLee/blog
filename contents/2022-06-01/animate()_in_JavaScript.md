@@ -1,8 +1,10 @@
 ---
 date: '2022-06-01'
-title: 'animate() in JavaScript'
+title: 'javascript로 css 애니메이션 구현하기'
 categories: ['JavaScript', 'CSS']
-summary: 'javascript로 css 애니메이션 구현하기'
+summary: 'animate(keyframes(array) | keyframes(object), duration | optional) animate() in JavaScript
+javascript로 css 애니메이션을 구현하는 함수 Array keyframe Example
+배열 키프레임을 인자로 받는다. 시작 효과와 끝 효과를 지정할 수 있다.'
 thumbnail: '../javascript-logo.png'
 ---
 

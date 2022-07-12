@@ -1,8 +1,8 @@
 ---
 date: '2022-07-01'
-title: 'git push error..'
-categories: ['Frontend', 'git']
-summary: 'fatal: 관계 없는 커밋 내역의 병합을 거부합니다.'
+title: 'git push error.. fatal: 관계 없는 커밋 내역의 병합을 거부합니다.'
+categories: ['Frontend', 'Git']
+summary: 'fatal: 관계 없는 커밋 내역의 병합을 거부합니다. 위와 같은 오류가 발생했다. 이에 대한 해결법을 기록하고자 한다.'
 thumbnail: '../git-icon.png'
 ---
 

@@ -2,7 +2,7 @@
 date: '2022-05-07'
 title: 'React router에서의 index Router'
 categories: ['Frontend', 'React']
-summary: 'index routes in React Router v6'
+summary: 'index route 아마도 사람들이 이해하기 위해 React Router에서 가장 어려운 개념일 것입니다. 따라서 이전에 어려움을 겪었다면 이를 통해 문제가 해결되기를 바랍니다.'
 thumbnail: '../react-logo.png'
 ---
 
