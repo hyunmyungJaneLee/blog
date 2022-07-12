@@ -36,7 +36,7 @@ const CategoryListWrapper = styled.div`
 const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   <Link {...props} />
 ))`
-  background: ${({ active }) => (active ? '#34c1ed5c' : '')};
+  background: ${({ active }) => (active ? '#f8c555' : '')};
   border-radius: 10px;
   color: ${({ active }) => (active ? '#3c3a3a' : '')};
   padding: 5px 12px;
