@@ -5,7 +5,7 @@ import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 const Background = styled.div`
   width: 100%;
-  background-image: linear-gradient(60deg, #f8c555 0%, #f59a6d 100%);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   color: #ffffff;
 `;
 
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 768px;
-  height: 210px;
+  height: 310px;
   margin: 0 auto;
   line-height: 80px;
   font-size: 35px;
@@ -25,38 +25,38 @@ const Wrapper = styled.div`
     width: 100%;
     height: 130px;
     padding: 0 20px;
+    .gatsby-image-wrapper {
+      display: none;
+    }
   }
 `;
 
 const Title = styled.div`
   font-size: 35px;
   font-weight: 700;
-  color: #5e4307;
+  /* color: #5e4307; */
   span {
     font-size: 20px;
     vertical-align: top;
     position: relative;
     &.bracket {
       font-size: 30px;
-      color: #c9ffc9;
+      color: #34c1ed;
     }
     &.slash {
       font-size: 25px;
-      color: #c9ffc9;
-    }
-    &.tagname {
-      font-size: 30px;
-      letter-spacing: -2px;
-      color: #c9ffc9;
+      color: #34c1ed;
     }
   }
 
   @media (max-width: 768px) {
     font-size: 20px;
     span {
-      &.tagname {
-        font-size: 21px;
-        display: none;
+      &.bracket {
+        font-size: 20px;
+      }
+      &.slash {
+        font-size: 20px;
       }
     }
   }
@@ -72,12 +72,12 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
   return (
     <Background>
       <Wrapper>
-        {/* <ProfileImage profileImage={profileImage} /> */}
+        <ProfileImage profileImage={profileImage} />
         <Title>
           <span className="bracket">&lt;</span>
           {/* <span className="tagname">h1</span> */}
           <span className="bracket">&gt;</span>
-          기억 아카이브
+          TIL; 기억 아카이브
           <span className="bracket">&lt;</span>
           <span className="slash">/</span>
           {/* <span className="tagname">h1</span> */}

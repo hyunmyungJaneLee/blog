@@ -20,8 +20,7 @@ const Footer: FunctionComponent = function () {
   const thisYear = date.getFullYear();
   return (
     <FooterWrapper>
-      Thank You for Visiting My Blog, Have a Good Day 😊
-      <br />© {thisYear} hyunmyung Lee, Powered By Gatsby.
+      © {thisYear} hyunmyung Lee, Powered By Gatsby.
     </FooterWrapper>
   );
 };

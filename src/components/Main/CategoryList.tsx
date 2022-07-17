@@ -45,6 +45,8 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   font-size: 18px;
   font-weight: ${({ active }) => (active ? '800' : '400')};
   cursor: pointer;
+  height: 34px;
+  line-height: 27px;
 
   &:last-of-type {
     margin-right: 0;
