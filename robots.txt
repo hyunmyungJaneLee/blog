@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://hyunmyungjanelee.github.io/sitemap/sitemap-index.xml
+Sitemap: https://hyunmyungjanelee.github.io/blog/sitemap/sitemap-index.xml
 Host: https://hyunmyungjanelee.github.io
