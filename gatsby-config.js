@@ -4,8 +4,9 @@ module.exports = {
     description:
       '프론트엔드 개발을 좋아하는 햄맹씨의 블로그입니다. 기억하기 위해 기록합니다.',
     author: 'hyunmyungJaneLee',
-    siteUrl: 'https://hyunmyungjanelee.github.io/blog',
+    siteUrl: 'https://hyunmyungjanelee.github.io/',
   },
+  pathPrefix: '/blog',
   plugins: [
     {
       resolve: 'gatsby-plugin-typescript',
@@ -80,7 +81,7 @@ module.exports = {
           {
             resolve: 'gatsby-plugin-canonical-urls',
             options: {
-              siteUrl: 'https://hyunmyungjanelee.github.io/blog',
+              siteUrl: 'https://hyunmyungjanelee.github.io/',
               stripQueryString: true,
             },
           },
