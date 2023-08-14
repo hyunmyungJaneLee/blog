@@ -4,6 +4,7 @@
   "description": "Blog starter with Gatsby",
   "version": "0.1.0",
   "author": "hmlee2356@gmail.com",
+  "homepage": "https://hyunmyungjanelee.github.io/blog/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",

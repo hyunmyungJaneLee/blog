@@ -1,6 +1,6 @@
 ---
 date: '2022-07-17'
-title: 'upstream과 remote repository'
+title: 'upstream과 remote repository test'
 categories: ['Frontend', 'Git']
 summary: '아래 글을 보고 내가 알게 쉽게 정리한 git에 대해 기록한다. 깃은 깃헙이 아니다. 깃을 제대로 알기도 전에 처음 깃헙이라는 서비스를 경험했을 당시 나도 그렇게 생각했었다. 
 gitlab, bitbucket을 접하고 조금은 깃에 익숙해진 지금 더 나아가 upstream과 remote repository에 대해 정리한다.'

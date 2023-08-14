@@ -4,7 +4,7 @@ module.exports = {
     description:
       '프론트엔드 개발을 좋아하는 햄맹씨의 블로그입니다. 기억하기 위해 기록합니다.',
     author: 'hyunmyungJaneLee',
-    siteUrl: 'https://hyunmyungjanelee.github.io/',
+    siteUrl: 'https://hyunmyungjanelee.github.io/blog/',
   },
   plugins: [
     {
